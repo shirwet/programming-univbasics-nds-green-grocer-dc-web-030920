@@ -71,7 +71,8 @@ def apply_clearance(cart)
 while counter < cart.length
 
 if cart[counter][:clearance]
-  
+  new_cart_item_clearance = cart_item(clearance[counter][:item],cart)
+cart[counter][:price] = cart
   return clearance_item
 else
   return FALSE
