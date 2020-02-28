@@ -96,6 +96,9 @@ while counter < coupons.length
 new_consolidate_cart = consolidate_cart
 total += cart[counter][:price]
 apply_coupons << apply_clearance
+if cart > 100
+  total = (cart[counter][:price] - (cart[counter][:]))
+end
 counter +=1
 end
 
