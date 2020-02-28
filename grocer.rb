@@ -68,7 +68,7 @@ def apply_clearance(cart)
   # REMEMBER: This method **should** update cart
   counter = 0
 while counter < cart.length
-new_cart_item_clearance = find_item_by_namection(clearance[counter][:item],cart)
+new_cart_item_clearance = cart_item(clearance[counter][:item],cart)
 clearance_item = 
 if clearance_item 
   return TRUE
