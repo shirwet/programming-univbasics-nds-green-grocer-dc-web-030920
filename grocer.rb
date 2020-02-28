@@ -97,7 +97,7 @@ new_consolidate_cart = consolidate_cart
 total += cart[counter][:price]
 apply_coupons << apply_clearance
 if cart > 100
-  total = (cart[counter][:price] - (cart[counter][:]))
+  total = (cart[counter][:price] - (cart[counter][:price] * 0.10))
 end
 counter +=1
 end
