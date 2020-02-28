@@ -72,7 +72,7 @@ while counter < cart.length
 
 if cart[counter][:clearance]
   new_cart_item_clearance = cart_item(clearance[counter][:item],cart)
-cart[counter][:price] = (cart[counter][:price] - (cart[counter][:price] * 0.2))
+cart[counter][:price] = (cart[counter][:price] - (cart[counter][:price] * 0.20))
   return clearance_item
 else
   return FALSE
