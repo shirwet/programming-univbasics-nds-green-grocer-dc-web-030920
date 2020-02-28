@@ -91,8 +91,10 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
   counter = 0
+  total = 0
 while counter < coupons.length
 new_consolidate_cart = consolidate_cart
+total += cart[counter][:price]
 apply_coupons << apply_clearance
 counter +=1
 end
