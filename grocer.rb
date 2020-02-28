@@ -90,4 +90,11 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
+  counter = 0
+while counter < coupons.length
+new_con
+
+counter +=1
+end
+
 end
