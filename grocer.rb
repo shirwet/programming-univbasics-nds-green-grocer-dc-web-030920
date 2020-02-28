@@ -90,11 +90,11 @@ def checkout(cart, coupons)
 while counter < final_cart.length
 
 total += final_cart[counter][:price] * final_cart[counter][:count]
-
-if cart > 100
-  total = (cart[counter][:price] - (cart[counter][:price] * 0.10))
-end
 counter +=1
 end
-
+if total > 100
+  total -= ( total * 0.10)
 end
+total
+end
+
