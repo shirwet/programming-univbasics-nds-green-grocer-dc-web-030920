@@ -92,7 +92,7 @@ def checkout(cart, coupons)
   # some irritated customers
   counter = 0
 while counter < coupons.length
-new_con
+new_consolidate_cart = consolidate_cart
 
 counter +=1
 end
