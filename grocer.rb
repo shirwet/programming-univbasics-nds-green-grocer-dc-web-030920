@@ -81,11 +81,11 @@ cart
 end
 
 def checkout(cart, coupons)
- 
+ new_consolidate_cart = consolidate_cart (cart)
   counter = 0
   total = 0
 while counter < coupons.length
-new_consolidate_cart = consolidate_cart (cart)
+
 total += cart[counter][:price]
 apply_coupons << apply_clearance
 if cart > 100
