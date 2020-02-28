@@ -69,9 +69,9 @@ def apply_clearance(cart)
   
   counter = 0
 while counter < cart.length
-new_cart_item_clearance = cart_item(clearance[counter][:item],cart)
-clearance_item = cart_item[counter][:counter] / 20%
-if clearance_item 
+
+if cart[counter][:clearance]
+  
   return clearance_item
 else
   return FALSE
